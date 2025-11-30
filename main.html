@@ -1,130 +1,110 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<title>HTML Assignment 3</title>
-	<style>
-		table {
-border: 1px solid black;
-border-spacing: 1px;
-padding: 1px;
-}
-.middle {
-margin: 0 auto;
-	
-}
-.center {
-text-align: center;
-}
-.right {
-text-align: right;
-}
-.green {
-background-color: green;
-	height:20px
-}
-.blue {
-background-color: blue;
-	height:20px
-}
-	</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Assignment 3</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+        }
+        .middle {
+            margin: 0 auto;
+			width:500px
+        }
+        .center {
+            text-align: center;
+				width:70px
+        }
+        .right {
+            text-align: right;
+			width:70px
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+    </style>
 </head>
-
 <body>
-   <h1 style="text-align:center;">HTML Assignment #3</h1>
+    <h1 style="text-align:center;">HTML Assignment #3</h1>
 
-
-<!-- Table 1 -->
-<table id="table-1" class="middle" border="1" >
-<tr>
-<td id="t11">left</td>
-<td id="t12">centre</td>
-<td id="t13" class="right">right</td>
-</tr>
-<tr class="center">
-<td id="t11">left</td>
-<td id="t12">centre</td>
-<td id="t13" class="right">right</td>
-
-</tr>
-<tr>
-<td id="t11">left</td>
-<td id="t12">centre</td>
-<td id="t13" class="right">right</td>
-</tr>
+   <!-- TABLE 1 -->
+<table id="table-1" class="middle" style="border:1px solid black; border-spacing:1px;" cellpadding="1">
+    <thead>
+        <tr>
+            <td id="t11" style="border:1px solid black; padding:1px; 	width:70px">left</td>
+            <td id="t12" class="center" style="border:1px solid black; padding:1px; text-align:center">centre</td>
+            <td id="t13" class="right" style="border:1px solid black; padding:1px;">right</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border:1px solid black; padding:1px 	width:70px; ">left</td>
+            <td style="border:1px solid black; padding:1px; text-align:center">centre</td>
+            <td class="right" style="border:1px solid black; padding:1px;">right</td>
+        </tr>
+        <tr >
+            <td style="border:1px solid black; padding:1px;">left</td>
+            <td style="border:1px solid black; padding:1px; text-align:center">centre</td>
+            <td class="right" style="border:1px solid black; padding:1px;">right</td>
+        </tr>
+    </tbody>
 </table>
 
 
-<br /><br />
+    <br /><br />
 
+    <!-- Table 2 -->
+    <table id="table-2" class="middle" border="1px">
+        <tr>
+            <td id="t21" colspan="6" style="height:20px"></td>
+        </tr>
+        <!-- 5 more rows with 6 columns each -->
+        <tr style="height:20px">
+	            <td rowspan=4 style="width:20px"></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+		
+         <tr style="height:20px">
+            <td></td><td colspan=3></td><td></td>
+        </tr>
+		
+         <tr style="height:20px">
+            <td></td><td colspan=3></td><td></td>
+        </tr>
+		
+        <tr style="height:20px">
+            <td style="width:20px"></td><td style="width:20px"></td><td style="width:20px"></td><td style="width:20px"></td><td style="width:20px"></td>
+        </tr>
+		
+       <tr style="height:20px">
+            <td colspan="6" style="width:20px"></td>
+        </tr>
+		
+    </table>
 
-<!-- Table 2 -->
-<table id="table-2" class="middle" border="1" sty>
-<tr>
-<td id="t21" colspan="6" style="height:20px; width:20px"></td>
-</tr>
-<!-- 5 more rows with 6 columns each -->
-<tr>
-<td style="height:10px" rowspan="4" ></td>
-	<td style="height:10px"></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	
-</tr>
-<tr>
-<td ></td>
-	<td style="height:10px" colspan="3"></td>
-	<td ></td>
-	
-</tr>
-	
-<tr>
-<td ></td>
-	<td style="height:10px" colspan="3"></td>
-	<td ></td>
-	
-</tr>
-	
-<tr>
-<td style="height:10px"></td>
-	<td></td>
-    <td></td> 
-	<td></td>
-	<td></td>
-</tr>
-	
-<tr>
-<td colspan="6"></td>
-</tr>
-	
+    <br /><br />
+
+    <!-- Table 3 -->
+  <table id="table-3" class="middle" style="border:1px solid black; border-spacing:1px;" cellpadding="1">
+    <tr class="green">
+        <td colspan="3" style="border:1px solid black; padding:1px; height:20px"></td>
+    </tr>
+    <tr>
+        <td style="border:1px solid black; padding:1px; width:30px"></td>
+        <td id="t-image" style="border:1px solid black; padding:1px;">
+            <img src="https://picsum.photos/200" width="300" />
+        </td>
+        <td style="border:1px solid black; padding:1px; width:30px"></td>
+    </tr>
+    <tr class="blue">
+        <td colspan="3" style="border:1px solid black; padding:1px; height:20px"></td>
+    </tr>
 </table>
 
-
-<br /><br />
-
-
-<!-- Table 3 -->
-<table id="table-3" class="middle" border="1">
-<tr class="green">
-<td colspan="3" ></td>
-
-</tr>
-<tr>
-<td ></td>
-<td id="t-image" >
-<img src="IMAGE_URL_HERE" alt="Sample Image" width="150" />
-</td>
-<td style="width:30px"></td>
-</tr>
-<tr class="blue">
-<td colspan="3"></td>
-
-</tr>
-</table>
 </body>
-
 </html>
